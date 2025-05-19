@@ -21,7 +21,7 @@
         target = `https://duckduckgo.com/?t=h_&q=${encodeURIComponent(input)}&ia=web`;
       }
 
-      window.location.href = `/active/embed.html?url=${encodeURIComponent(target)}`;
+      window.location.href = `/active/embed?url=${encodeURIComponent(target)}`;
     }
 const canvas = document.getElementById('matrix-canvas');
 const ctx = canvas.getContext('2d');
@@ -104,5 +104,5 @@ function openIframedUrlInNewBlank(url) {
 
 document.getElementById('github-link').addEventListener('click', function (e) {
     e.preventDefault();
-    openIframedUrlInNewBlank('/active/embed.html?url=https://github.com/luma9x/luma9x.github.io/');
+    openIframedUrlInNewBlank('/active/embed?url=https://github.com/luma9x/luma9x.github.io/');
 });
